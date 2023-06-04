@@ -1,12 +1,12 @@
-import React from 'react';
-import { Tilt } from 'react-tilt';
-import { motion } from 'framer-motion';
-import { styles } from '../styles';
-import { services } from '../constants';
-import { fadeIn, textVariant} from '../utils/motion';
-import { SectionWrapper } from '../hoc';
+import React from "react";
+import { Tilt } from "react-tilt";
+import { motion } from "framer-motion";
+import { styles } from "../styles";
+import { services } from "../constants";
+import { fadeIn, textVariant } from "../utils/motion";
+import { SectionWrapper } from "../hoc";
 
-const ServiceCard = ({index, title, icon}) => {
+const ServiceCard = ({ index, title, icon }) => {
   return (
     <Tilt className="xs:w-[250px] w-full">
       <motion.div
@@ -16,64 +16,69 @@ const ServiceCard = ({index, title, icon}) => {
       >
         <div
           options={{
-            max:45,
+            max: 45,
             scale: 1,
-            speed: 450
+            speed: 450,
           }}
           className="bg-tertiary round-[20px] py-5 px-12
           min-h-[280px] flex justify-evenly items-center flex-col"
         >
-          <img src={icon} alt={title}
-          className="w-16 h-16 object-contain"/>
-          <h3 className='text-white text-[20px] font-bold 
-          text-center'>{title}</h3>
-
+          <img src={icon} alt={title} className="w-16 h-16 object-contain" />
+          <h3
+            className="text-white text-[20px] font-bold 
+          text-center"
+          >
+            {title}
+          </h3>
         </div>
       </motion.div>
-    </Tilt>  
-  ) 
-}
-
+    </Tilt>
+  );
+};
 
 const About = () => {
   return (
     <>
       <motion.div>
-        <p className={styles.sectionSubText}>
-          Introduction
-        </p>
-        <h2 className={styles.sectionHeadText}>
-          Overview
-        </h2>
+        <p className={styles.sectionSubText}>About Us</p>
+        <h2 className={styles.sectionHeadText}>Overview</h2>
       </motion.div>
 
-      <motion.p 
-       variants={fadeIn("","", 0.1, 1)}
-       className="mt-4 text-secondary text-[17px] max-w-3xl
-       leading-[30px]"
+      <motion.p
+        variants={fadeIn("", "", 0.1, 1)}
+        className="mt-4 text-secondary text-[17px] max-w-3xl
+       leading-[25px]"
       >
-         Lorem ipsum,
-         dolor sit amet consectetur adipisicing elit. 
-         Praesentium hic beatae deleniti minima perspiciatis 
-         ad est possimus, laudantium corrupti, a iure. 
-         Laboriosam ratione in illo dolorem dignissimos 
-         suscipit ab, sapiente non amet veritatis at iusto 
-         nesciunt soluta blanditiis nostrum unde, voluptatem 
-         aspernatur. Saepe consequatur facilis maxime sint 
-         dolor vero vitae nemo quod animi incidunt fugit libero
-         tenetur natus sed eligendi asperiores quia tempora 
-         assumenda minima, molestias eos perspiciatis expedita 
-         adipisci nisi? Animi, quam, pariatur porro incidunt 
+        SKS engineers group, promoted by a team of highly experienced and well
+        manned professionals and are constantly working with an aim to attain
+        excellence and deliver the best in the business and its class.
+        <br /> ………… <br />
+        SKS engineers group, was established in 2014 with the motto of TQM
+        (Total Quality Management) and to deliver the best quality and
+        workmanship at all times.SKS engineers group, has forayed into the
+        electrical service industry almost a decade back and has established as
+        one of the leading provider of engineering and related services.
       </motion.p>
-      <div className='mt-20 flex flex-wrap gap-10'>
-        {services.map((service, index)=>(
-          <ServiceCard key={service.title} index = {index}
-          {...service}/>
-        ))}
 
+      <motion.div>
+        <h2 className={styles.sectionHeadText}>Mission and vision</h2>
+      </motion.div>
+      <motion.p
+        variants={fadeIn("", "", 0.1, 1)}
+        className="mt-4 text-secondary text-[17px] max-w-3xl
+       leading-[25px]"
+      >
+        Our company's vision to create a good work environment &“To be a
+        globally respected Company that provides best-of-breed business
+        solutions by the best in class”.
+      </motion.p>
+      <div className="mt-20 flex flex-wrap gap-10">
+        {services.map((service, index) => (
+          <ServiceCard key={service.title} index={index} {...service} />
+        ))}
       </div>
     </>
-  )
-}
+  );
+};
 
-export default SectionWrapper(About, "about")
+export default SectionWrapper(About, "about");
