@@ -20,7 +20,7 @@ const ServiceCard = ({ index, title, icon }) => {
             scale: 1,
             speed: 450,
           }}
-          className="bg-tertiary round-[20px] py-5 px-12
+          className="bg-tertiary rounded-[20px] py-5 px-12
           min-h-[280px] flex justify-evenly items-center flex-col"
         >
           <img src={icon} alt={title} className="w-16 h-16 object-contain" />
@@ -60,7 +60,7 @@ const About = () => {
         one of the leading provider of engineering and related services.
       </motion.p>
 
-      <motion.div>
+      {/* <motion.div>
         <h2 className={styles.sectionHeadText}>Mission and vision</h2>
       </motion.div>
       <motion.p
@@ -71,7 +71,7 @@ const About = () => {
         Our company's vision to create a good work environment &“To be a
         globally respected Company that provides best-of-breed business
         solutions by the best in class”.
-      </motion.p>
+      </motion.p> */}
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
