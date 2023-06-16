@@ -60,18 +60,6 @@ const About = () => {
         one of the leading provider of engineering and related services.
       </motion.p>
 
-      {/* <motion.div>
-        <h2 className={styles.sectionHeadText}>Mission and vision</h2>
-      </motion.div>
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl
-       leading-[25px]"
-      >
-        Our company's vision to create a good work environment &“To be a
-        globally respected Company that provides best-of-breed business
-        solutions by the best in class”.
-      </motion.p> */}
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
