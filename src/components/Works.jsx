@@ -23,13 +23,13 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary p-4 rounded-2xl sm:w-[335px] w-full"
+        className="bg-secondary p-4 rounded-2xl sm:w-[335px] w-full"
       >
         <div className="relative w-full h-[230px]">
           <img
             src={image}
             alt="project_image"
-            className="w-full h-full object-cover rounded-2xl"
+            className="w-full h-full object-contain rounded-2xl"
           />
 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
@@ -47,10 +47,10 @@ const ProjectCard = ({
         </div>
 
         <div className="mt-5">
-          <h3 className="text-white font-bold text-[24px]">{name}</h3>
-          <h3 className="text-white font-bold text-[24px]">{title}</h3>
-          <p className="mt-2 text-secondary text-[14px]">{description}</p>
-          <h5 className="text-white font-bold text-[24px]">{Exp}</h5>
+          <h3 className="text-black font-bold text-[24px]">{name}</h3>
+          <h3 className="text-black font-bold text-[24px]">{title}</h3>
+          <p className="mt-2 text-primary text-[14px]">{description}</p>
+          <h5 className="text-black font-bold text-[24px]">{Exp}</h5>
         </div>
       </Tilt>
     </motion.div>
@@ -69,7 +69,7 @@ const Works = () => {
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] 
-          max-w-3xl leading-[30px]"
+          max-w-5xl leading-[30px]"
         >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
           adipisci itaque earum officiis soluta! Architecto sunt deleniti modi
