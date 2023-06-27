@@ -46,8 +46,8 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[20px] max-w-5xl
-       leading-[25px]"
+        className="mt-4 text-secondary text-[20px] max-w-6xl
+       leading-[25px] text-justify"
       >
         SKS engineers group, promoted by a team of highly experienced and well
         manned professionals and are constantly working with an aim to attain

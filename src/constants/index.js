@@ -137,7 +137,7 @@ const experiences = [
   },
   {
     title: "Kay Pride Mall",
-    icon: starbucks,
+    icon: meta,
     iconBg: "#383E56",
     date: "18 Months",
     points: [
@@ -152,7 +152,7 @@ const experiences = [
   },
   {
     title: "Hotel Radisson",
-    icon: starbucks,
+    icon: shopify,
     iconBg: "#383E56",
     date: "18 Months",
     points: [
@@ -168,7 +168,7 @@ const experiences = [
   },
   {
     title: "Modi Farm House",
-    icon: starbucks,
+    icon: tesla,
     iconBg: "#383E56",
     date: "18 Months",
     points: [
@@ -183,7 +183,7 @@ const experiences = [
   },
   {
     title: "Goenka Farm House",
-    icon: starbucks,
+    icon: meta,
     iconBg: "#383E56",
     date: "24 Months",
     points: [
@@ -214,7 +214,7 @@ const experiences = [
   },
   {
     title: "Rukmini Birla Hospital",
-    icon: starbucks,
+    icon: shopify,
     iconBg: "#383E56",
     date: "24 Months",
     points: [
@@ -231,7 +231,7 @@ const experiences = [
   },
   {
     title: "Sai Hermitage Resorts",
-    icon: starbucks,
+    icon: meta,
     iconBg: "#383E56",
     date: "24 Months",
     points: [
@@ -247,7 +247,7 @@ const experiences = [
   },
   {
     title: "Cygnett Hotels",
-    icon: starbucks,
+    icon: shopify,
     iconBg: "#383E56",
     date: "24 Months",
     points: [
@@ -261,7 +261,7 @@ const experiences = [
   },
   {
     title: "ITC Green Berry Hotels",
-    icon: starbucks,
+    icon: tesla,
     iconBg: "#383E56",
     date: "24 Months",
     points: [
