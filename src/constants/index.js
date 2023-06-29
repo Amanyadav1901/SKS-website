@@ -55,10 +55,6 @@ const services = [
     icon: mobile,
   },
   {
-    title: "Security System",
-    icon: mobile,
-  },
-  {
     title: "HVAC",
     icon: mobile,
   },
