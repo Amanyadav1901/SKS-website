@@ -5,9 +5,13 @@ import { ComputersCanvas } from "./canvas";
 const Hero = () => {
   return (
     <section className="relative w-full h-screen mx-auto">
-      <div
+      {/* <div
         className={`${styles.paddingX} absolute inset-0 top-[120px]
-         max-w-7x1 mx-auto flex flex-row items-start gap-5`}
+         max-w-3xl mx-auto flex flex-row items-start gap-5 z-10 box-border h-auto`}
+        style={{
+          border: "2px solid black",
+          backgroundColor: "rgba(0, 0, 0, 0.4)",
+        }}
       >
         <div>
           <h1 className={`${styles.heroHeadText} text-black`}>
@@ -22,7 +26,7 @@ const Hero = () => {
             <br className="sm:block hidden" />
           </p>
         </div>
-      </div>
+      </div> */}
       {/* <ComputersCanvas /> */}
 
       <div

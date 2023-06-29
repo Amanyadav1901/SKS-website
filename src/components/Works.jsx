@@ -47,10 +47,10 @@ const ProjectCard = ({
         </div>
 
         <div className="mt-5">
-          <h3 className="text-black font-bold text-[24px]">{name}</h3>
-          <h3 className="text-black font-bold text-[24px]">{title}</h3>
+          <h3 className="text-white font-bold text-[24px]">{name}</h3>
+          <h3 className="text-white font-bold text-[24px]">{title}</h3>
           <p className="mt-2 text-primary text-[14px]">{description}</p>
-          <h5 className="text-black font-bold text-[24px]">{Exp}</h5>
+          <h5 className="text-white font-bold text-[24px]">{Exp}</h5>
         </div>
       </Tilt>
     </motion.div>
@@ -71,13 +71,7 @@ const Works = () => {
           className="mt-3 text-secondary text-[17px] 
           max-w-5xl leading-[30px]"
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-          adipisci itaque earum officiis soluta! Architecto sunt deleniti modi
-          praesentium ad porro quisquam corporis nobis a corrupti fugiat ipsa
-          vitae, deserunt eum nam, beatae ratione magni harum, velit odit et?
-          Vel aut tempore repellendus omnis ad ab similique, nobis quis?
-          Necessitatibus, est a. Asperiores alias laborum corrupti perspiciatis
-          praesentium. In cupiditate dolor laudantium nisi voluptates.
+          Our Very Well Exprienced and Professional Team
         </motion.p>
       </div>
 

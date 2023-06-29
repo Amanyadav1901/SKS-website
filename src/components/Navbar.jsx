@@ -9,10 +9,9 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <>
-      <div className="w-full flex text-white-100">contact us-:</div>
       <nav
         className={`${styles.paddingX} w-full flex items-center py-5 
-    fixed top-0 z-20 bg-primary`}
+    fixed top-0 z-10 bg-primary`}
       >
         <div
           className="w-full flex justify-between items-center
@@ -27,7 +26,7 @@ const Navbar = () => {
             }}
           >
             <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-            <p className="text-white text-[18px] font-bold cursor-pointer flex">
+            <p className="text-black text-[18px] font-bold cursor-pointer flex">
               SKS Engineers Group&nbsp;
               <span className="sm:block hidden">| </span>
             </p>
