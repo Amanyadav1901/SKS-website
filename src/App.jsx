@@ -12,19 +12,11 @@ import {
 } from "./components";
 
 const App = () => {
-  const bgImagestyle = {
-    backgroundImage: `url('src/assets/bg2.png')`,
-    backgroundPosition: "center",
-    backgroundSize: "cover",
-    height: "100%",
-  };
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-primary">
-        <div
-          className="bg-cover bg-no-repeat  bg-center relative z-0"
-          style={bgImagestyle}
-        >
+        <div className="bg-cover bg-no-repeat  bg-center relative z-0 sm:bg-cover">
+          <div className="w-full h-20 block text-black"></div>
           <Navbar />
           <Hero />
         </div>

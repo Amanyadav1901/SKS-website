@@ -28,7 +28,7 @@ const Navbar = () => {
             <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
             <p className="text-black text-[18px] font-bold cursor-pointer flex">
               SKS Engineers Group&nbsp;
-              <span className="sm:block hidden">| </span>
+              <span className="font-thin sm:block hidden">| Call us : </span>
             </p>
           </Link>
           <ul className="list-none hidden sm:flex flex-row gap-10">
@@ -36,9 +36,9 @@ const Navbar = () => {
               <li
                 key={link.id}
                 className={`${
-                  active === link.title ? "text-white" : "text-secondary"
+                  active === link.title ? "text-black" : "text-secondary"
                 }
-                    hover:text-white text-[18px] font-medium cursor-pointer
+                    hover:text-black text-[18px] font-medium cursor-pointer
                   `}
                 onClick={() => setActive(link.title)}
               >
@@ -65,7 +65,7 @@ const Navbar = () => {
                   <li
                     key={link.id}
                     className={`${
-                      active === link.title ? "text-white" : "text-secondary"
+                      active === link.title ? "text-black" : "text-white"
                     }
                    font-poppins font-medium cursor-pointer text-[16px]`}
                     onClick={() => {

@@ -3,6 +3,12 @@ import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
+  const bgImagestyle = {
+    backgroundImage: `url('src/assets/bg3.png')`,
+    backgroundPosition: "center",
+    backgroundSize: "cover",
+    height: "100%",
+  };
   return (
     <section className="relative w-full h-screen mx-auto">
       {/* <div
@@ -28,6 +34,10 @@ const Hero = () => {
         </div>
       </div> */}
       {/* <ComputersCanvas /> */}
+      <div
+        className="bg-cover bg-no-repeat  bg-center relative z-0 sm:bg-cover"
+        style={bgImagestyle}
+      ></div>
 
       <div
         className="absolute xs:bottom-10 bottom-32 w-full
