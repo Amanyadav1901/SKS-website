@@ -28,7 +28,9 @@ const Navbar = () => {
             <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
             <p className="text-black text-[18px] font-bold cursor-pointer flex">
               SKS Engineers Group&nbsp;
-              <span className="font-thin sm:block hidden">| Call us : </span>
+              <span className="font-thin sm:block hidden">
+                | Call us : 9871199766{" "}
+              </span>
             </p>
           </Link>
           <ul className="list-none hidden sm:flex flex-row gap-10">
