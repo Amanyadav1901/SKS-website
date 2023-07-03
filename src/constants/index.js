@@ -60,61 +60,6 @@ const services = [
   },
 ];
 
-const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
-];
-
 const experiences = [
   {
     title: "Hedgewar Institutional complex",
@@ -275,7 +220,7 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+      "I thought it was impossible to make our Hotel as beautiful as our this, but SKS Engineers proved me wrong.",
     name: "Sara Lee",
     designation: "CFO",
     company: "Acme Co",
@@ -306,7 +251,6 @@ const projects = [
     Exp: "Experience : 15 years",
     description: `Email : LALITKUMAR49@GMAIL.COM `,
     image: person,
-    source_code_link: "https://github.com/",
   },
   {
     name: "Mr. MD Sayeed",
@@ -314,7 +258,6 @@ const projects = [
     Exp: "Experience : 15 years",
     description: "Email : ANSARIMDSAYEED@GMAIL.COM",
     image: person,
-    source_code_link: "https://github.com/",
   },
   {
     name: "Mr. Mustafa",
@@ -322,7 +265,6 @@ const projects = [
     Exp: "Experience : 15 years",
     description: "Email : MDMUSTAFA715@GMAIL.COM ",
     image: person,
-    source_code_link: "https://github.com/",
   },
   {
     name: "Mr. Ajay",
@@ -330,7 +272,6 @@ const projects = [
     Exp: "Experience : 15 years",
     description: "Email : THAKURAJAY1989@GMAIL.COM",
     image: person,
-    source_code_link: "https://github.com/",
   },
   {
     name: "Mr. Mohan",
@@ -338,7 +279,6 @@ const projects = [
     Exp: "Experience : 17 years",
     description: "Email : MOHANDA8294@GMAIL.COM",
     image: person,
-    source_code_link: "https://github.com/",
   },
   {
     name: "Mr. Manoj",
@@ -346,8 +286,7 @@ const projects = [
     Exp: "Experience : 15 years",
     description: "Email : MANOJSHARMA7@GMAIL.COM",
     image: person,
-    source_code_link: "https://github.com/",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, experiences, testimonials, projects };
