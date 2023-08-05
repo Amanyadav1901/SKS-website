@@ -30,6 +30,10 @@ import carrent from "./carrent.png";
 import person from "./person.jpeg";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import bg1 from "./bg1.jpg";
+import bg2 from "./bg2.png";
+import bg3 from "./bg3.png";
+import bg4 from "./bg4.png";
 
 export {
   logo,
@@ -61,4 +65,8 @@ export {
   jobit,
   tripguide,
   person,
+  bg1,
+  bg2,
+  bg3,
+  bg4,
 };

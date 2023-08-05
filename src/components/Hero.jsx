@@ -1,28 +1,8 @@
 import { motion } from "framer-motion";
-import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
 import { Carousel } from "react-carousel-minimal";
+import { backgrounds } from "../constants";
 
 const Hero = () => {
-  const data = [
-    {
-      image: "src/assets/bg3.png",
-      caption: "San Francisco",
-    },
-    {
-      image: "src/assets/bg2.png",
-      caption: "Scotland",
-    },
-    {
-      image: "src/assets/bg4.png",
-      caption: "Scotland",
-    },
-    {
-      image: "src/assets/bg1.jpg",
-      caption: "Scotland",
-    },
-  ];
-
   const captionStyle = {
     fontSize: "2em",
     fontWeight: "bold",
@@ -61,7 +41,7 @@ const Hero = () => {
           }}
         >
           <Carousel
-            data={data}
+            data={backgrounds}
             time={2000}
             width="100%"
             height="800px"

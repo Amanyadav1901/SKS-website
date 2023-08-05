@@ -24,6 +24,10 @@ import {
   jobit,
   tripguide,
   threejs,
+  bg1,
+  bg2,
+  bg3,
+  bg4,
 } from "../assets";
 
 export const navLinks = [
@@ -289,4 +293,23 @@ const projects = [
   },
 ];
 
-export { services, experiences, testimonials, projects };
+const backgrounds = [
+  {
+    image: bg1,
+    caption: "San Francisco",
+  },
+  {
+    image: bg2,
+    caption: "Scotland",
+  },
+  {
+    image: bg3,
+    caption: "Scotland",
+  },
+  {
+    image: bg4,
+    caption: "Scotland",
+  },
+];
+
+export { services, experiences, testimonials, projects, backgrounds };
