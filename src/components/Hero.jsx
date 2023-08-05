@@ -1,14 +1,33 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+import { Carousel } from "react-carousel-minimal";
 
 const Hero = () => {
-  const bgImagestyle = {
-    backgroundImage: `url('src/assets/bg3.png')`,
-    backgroundPosition: "center",
-    backgroundSize: "cover",
-    height: "100%",
+  const data = [
+    {
+      image: "src/assets/bg3.png",
+      caption: "San Francisco",
+    },
+    {
+      image: "src/assets/bg2.png",
+      caption: "Scotland",
+    },
+    {
+      image: "src/assets/bg4.png",
+      caption: "Scotland",
+    },
+    {
+      image: "src/assets/bg1.jpg",
+      caption: "Scotland",
+    },
+  ];
+
+  const captionStyle = {
+    fontSize: "2em",
+    fontWeight: "bold",
   };
+
   return (
     <section className="relative w-full h-screen mx-auto">
       {/* <div
@@ -34,10 +53,34 @@ const Hero = () => {
         </div>
       </div> */}
       {/* <ComputersCanvas /> */}
-      <div
-        className="bg-cover bg-no-repeat  bg-center relative z-0 sm:bg-cover"
-        style={bgImagestyle}
-      ></div>
+      <div>
+        <div
+          className="sm : h-[500px]"
+          style={{
+            padding: "0 20px",
+          }}
+        >
+          <Carousel
+            data={data}
+            time={2000}
+            width="100%"
+            height="800px"
+            captionStyle={captionStyle}
+            radius="10px"
+            captionPosition="bottom"
+            automatic={true}
+            dots={true}
+            pauseIconColor="white"
+            pauseIconSize="40px"
+            slideBackgroundColor="darkgrey"
+            slideImageFit="cover"
+            style={{
+              textAlign: "center",
+              margin: "40px auto",
+            }}
+          />
+        </div>
+      </div>
 
       <div
         className="absolute xs:bottom-10 bottom-32 w-full
